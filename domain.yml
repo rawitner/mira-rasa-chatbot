@@ -10,7 +10,8 @@ intents:
 - automate_my_process
 - general_digital_auto_info
 - number_of_bots
-- about_technology
+- about_technology:
+    use_entities: ["tech"]
 - goodbye
 - affirm
 - deny
@@ -30,7 +31,7 @@ responses:
   utter_number_of_bots:
   - text: "As of July 2020 there is over 400 of my fellow digital workers, a.k.a. bots, busy executing processes across MetLife. However, these numbers are constantly changing as our bots get cross-skilled on executing multiple processes and ramp up, or down, to meet business and customer needs."
   utter_about_technology:
-  - text: "Here's some more info about [ ]{tech}"
+  - text: "Here's some more info about {tech}"
   utter_cheer_up:
   - text: "Here is something to cheer you up:"
     image: https://i.imgur.com/nGF1K8f.jpg
@@ -47,9 +48,19 @@ entities:
   - tech # custom entity extracted by CRFEntityExtractor
   - team # custom entity extracted by CRFEntityExtractor
 
+slots:
+  tech:
+    type: categorical
+    values:
+      - bizflow
+      - docusign
+      - OCR
+
 actions:
   - utter_greet
   - utter_about_mira_functionality
   - utter_about_technology
   - utter_number_of_bots
   - utter_general_digital_auto_info
+
+  

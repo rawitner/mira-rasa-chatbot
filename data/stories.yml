@@ -9,21 +9,23 @@ stories:
   - intent: mood_great
   - action: utter_happy
 
-- story: happy path - about mira functionality
+- story: about mira functionality
   steps:
   - intent: greet
   - action: utter_greet
   - intent: about_mira_functionality
   - action: utter_about_mira_functionality
 
-- story: happy path - about tech
+- story: about tech
   steps:
   - intent: greet
   - action: utter_greet
   - intent: about_technology
+    entities:
+      - tech: 'bizflow'
   - action: utter_about_technology
 
-- story: happy path - about digital auto team
+- story: about digital auto team
   steps:
   - intent: greet
   - action: utter_greet
