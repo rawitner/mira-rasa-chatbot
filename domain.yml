@@ -1,0 +1,55 @@
+version: "2.0"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+intents:
+- greet
+- about_mira_functionality
+- automate_my_process
+- general_digital_auto_info
+- number_of_bots
+- about_technology
+- goodbye
+- affirm
+- deny
+- mood_great
+- mood_unhappy
+- bot_challenge
+
+responses:
+  utter_greet:
+  - text: "Hey I'm Mira! How can I help you?"
+  utter_about_mira_functionality:
+  - text: "I'm very new to this role, but I am learning day-by-day.  Bear with me as I learn how best to help you about all things Digital Automation.  For now, you can select from the options above so I can better understand your needs."
+  utter_automate_my_process:
+  - text: "So exciting that you are thinking about using automation to help you!  If you want to find out more, and the options I give you above are not working for you, please reach out to one of our Engagement Leads - Maria Ross and she will be happy to connect with you."
+  utter_general_digital_auto_info:
+  - text: "The Digital Automation team was established in 2016.  Their mantra is 'Enabling a Changing Working Environment' Pretty cool uh?  If you'd like to find out more about who they are and what they do, please choose from the options above or surf our microsite."
+  utter_number_of_bots:
+  - text: "As of July 2020 there is over 400 of my fellow digital workers, a.k.a. bots, busy executing processes across MetLife. However, these numbers are constantly changing as our bots get cross-skilled on executing multiple processes and ramp up, or down, to meet business and customer needs."
+  utter_about_technology:
+  - text: "Here's some more info about [ ]{tech}"
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: https://i.imgur.com/nGF1K8f.jpg
+  utter_did_that_help:
+  - text: "Did that help you?"
+  utter_happy:
+  - text: "Great, carry on!"
+  utter_goodbye:
+  - text: "Bye"
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+entities:
+  - tech # custom entity extracted by CRFEntityExtractor
+  - team # custom entity extracted by CRFEntityExtractor
+
+actions:
+  - utter_greet
+  - utter_about_mira_functionality
+  - utter_about_technology
+  - utter_number_of_bots
+  - utter_general_digital_auto_info

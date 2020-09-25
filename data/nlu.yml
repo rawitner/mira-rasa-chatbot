@@ -1,0 +1,157 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - hey there
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - hi mira
+    - hey mira
+
+- intent: about_mira_functionality
+  examples: |
+    - what else can you tell me
+    - what else can you do
+    - what is your job
+    - what are your capabilities
+    - you and your capabilities
+    - what are you capable of
+    - what can you do for me
+    - let me know what you can do
+    - tell me what you can do
+    - what do you know
+    - what can you tell me
+
+- intent: about_technology
+  examples: |
+    - what is [bizflow]{"entity": "tech"}
+    - how do you use [bizflow]{"entity": "tech"}
+    - tell me about [docusign]{"entity": "tech"}
+    - whats [docusign]{"entity": "tech"}
+    - how is metlife using [OCR]{"entity": "tech"}
+
+- intent: automate_my_process
+  examples: |
+    - I would like to learn more about how to automate my process
+    - automate my process
+    - I have a process I want to automate
+    - theres a process I'd like to automate
+    - theres something I want to automate
+    - bpm process suitability
+    - process suitable for bpm
+    - opportunity intake
+    - initiate rpa
+    - automating processes
+
+- intent: general_digital_auto_info
+  examples: |
+    - can you tell me more about [digital automation]{"entity": "team"}
+    - tell me about [digital automation]{"entity": "team"}
+    - who is [digital automation]{"entity": "team"}
+    - tell me about the [digital automation team]{"entity": "team"}
+    - [digital automation team]{"entity": "team"}
+    - tell me about automation at metlife
+    - where can I learn more about [digital automation]{"entity": "team"}
+    - what does the [digital automation team]{"entity": "team"} do
+    - who is in the [digital automation team]{"entity": "team"}
+    - how many capabilities does da have
+    - tell me about capabilities of [digital automation]{"entity": "team"}
+    - what are the capabilities
+    - who are the members of the [automation team]{"entity": "team"}
+
+- intent: number_of_bots
+  examples: |
+    - digital automation
+    - how many bots
+    - number of bots
+    - number of digital workers
+    - how many robots are there
+    - how many digital workers are there
+    - how many bots are there
+    - how many digital workers are being used
+    - how many bots have been made
+    - bot numbers
+    - how many bots
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - are you smart
+    - are you a real person
